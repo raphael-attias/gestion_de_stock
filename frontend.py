@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
 
-    stock_manager = StockManager(host="your_mysql_host", user="your_mysql_user", password="your_mysql_password", database="store")
+    stock_manager = StockManager(host="127.0.0.1", user="root", password="R@ph@e?13*?", database="store")
 
     window = StockApp(stock_manager)
     window.show()
