@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 Made in Marseille
-
 @author: Raphael
 """
-#email : raphael.attias@laplateforme.io
+# email : raphael.attias@laplateforme.io
 
 from backend import StockManager
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QVBoxLayout, QWidget, QTableWidget, QTableWidgetItem, QLineEdit, QHBoxLayout, QComboBox, QDialog, QMessageBox, QFileDialog
 import csv
+import sys
 
 class StockApp(QMainWindow):
     def __init__(self, stock_manager):
@@ -143,7 +143,6 @@ class StockApp(QMainWindow):
 
         self.populate_table()
 
-
     def create_category_dialog(self):
         dialog = QDialog(self)
         dialog.setWindowTitle("Nouvelle Catégorie")
@@ -227,8 +226,6 @@ class StockApp(QMainWindow):
 
 
 if __name__ == "__main__":
-    import sys
-
     app = QApplication(sys.argv)
 
     stock_manager = StockManager(host="127.0.0.1", user="root", password="R@ph@e?13*?", database="store")
