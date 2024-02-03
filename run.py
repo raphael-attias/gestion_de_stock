@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Made in Marseille
+
+@author: Raphael
+"""
+#email : raphael.attias@laplateforme.io
+
 from backend import StockManager
 from frontend import StockApp
 from PySide6.QtWidgets import QApplication
